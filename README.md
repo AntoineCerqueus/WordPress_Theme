@@ -1,0 +1,1 @@
+Projet réalisé lors de ma formation de développeur web sur la création de thème WordPress
