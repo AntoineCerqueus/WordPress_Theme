@@ -1,0 +1,656 @@
+/*
+Theme Name: Mon 1er Thème
+Theme URI: https://google.fr
+Author: Antoine Cerqueus
+Author URI: https://google.fr
+Description: Thème test fait par Antoine Cerqueus lors de la formation simplon DWWM
+Requires at least: WordPress 5.0
+Version: 1.0
+*/
+
+body {
+    font-family: Montserrat, sans-serif;
+    overflow-x: hidden;
+    color: #4c4c4c;
+}
+
+/* ====================================================
+                        MENU
+==================================================== */
+
+.header-top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #000000;
+    font-weight: 700;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #4C4C4C;
+}
+
+.header-top-left {
+    position: relative;
+    left: 125px;
+}
+
+strong a {
+    color: #e4a700;
+    text-decoration: none;
+}
+
+.header-top-button {
+    position: relative;
+    right: 120px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 50px;
+    transition-property: background-color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.header-top-button:hover {
+    background-color: #e4a700;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1em 0;
+    max-width: 1200px;
+}
+
+.menu-item {
+    margin-right: 2em;
+}
+
+li {
+    list-style: none;
+}
+
+.logo {
+    position: relative;
+    left: 10em;
+    width: 100px;
+    height: auto;
+}
+
+#menu-menu-principal {
+    display: flex;
+    position: relative;
+    right: 10em;
+}
+
+li a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 700;
+    /* transition douce en sortie */
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+li a:hover {
+    color: #e4a700;
+    /* transition douce en entrée */
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+#wp-toolbar {
+    top: 32px;
+    /* on prend en compte le décalage de la barre admin wordpress */
+}
+
+/* ===============
+     FOOTER
+=============== */
+
+.widget {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    left: -1em;
+    background-image: url(img/maps.png);
+    box-shadow: inset 500px 0 rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    background-position: center;
+}
+
+.white {
+    color: #ffffff;
+}
+
+.email a {
+    color: #e4a700;
+}
+
+.footer-down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    color: #ffffff;
+    background-color: #4c4c4c;
+}
+
+.pres {
+    position: relative;
+    top: 32px;
+}
+
+/* ====================================================
+                        ACCUEIL
+==================================================== */
+
+/* ===============
+   PRESENTATION
+=============== */
+
+.presentation {
+    padding: 2em 0;
+    background-color: #ececec;
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.title:before {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: #e4a700;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    width: 25%;
+}
+
+.image {
+    width: 150px;
+    height: 100px;
+}
+
+.image, .name, .description {
+    padding: 1em;
+}
+
+.button, .buttons {
+    background-color: #e4a700;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+    padding: 1em;
+    margin-bottom: 1em;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.button a, .buttons a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #4c4c4c;
+}
+
+.button:hover a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ===============
+   SOUSCRIPTION
+=============== */
+
+.subscribe {
+    background-color: #4c4c4c;
+    padding: 2em 0;
+    color: #ffffff;
+}
+
+.buttons:hover {
+    background-color: #ffffff;
+    color: #4c4c4c;
+}
+
+.buttons:hover a {
+    color:#4c4c4c;;
+    text-decoration: none;
+}
+
+
+.item-left {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+    border-right: 2px solid #ececec;
+}
+
+.item-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    text-align: center;
+}
+
+/* ===============
+   INITIATION
+=============== */
+
+.information {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: 2em auto;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ececec;
+}
+
+/* .video-info {
+    width: 50%;
+}
+
+.video-info iframe {
+    width: 100%;
+    height: 100%;
+} */
+
+/* ===============
+     A PROPOS
+=============== */
+
+.about {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    position: relative;
+    top: 50px;
+    right: 100px;
+    background-color: #ececec;
+    padding: 2%;
+    padding-left: 12%;
+}
+
+.video {
+    z-index: 1;
+    /* box-shadow: 2px 2px 6px #000000; */
+    width: 60%;
+    
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#fonctionnement {
+    position: relative;
+    left: 50px;
+    background-color: #4c4c4c;
+    
+}
+
+#fonctionnement:hover {
+    background-color: #e4a700;
+}
+
+
+/* ===============
+    CAROUSSEL
+=============== */
+
+.slideshow {
+    background: #e4a700;
+}
+
+.s-content {
+    display: flex;
+    justify-content: space-around;
+    margin: 7em auto;
+    max-width: 1200px;
+    padding: 2em 0;
+}
+
+.s-content li {
+    margin: 0 20px;
+}
+
+li img {
+    width: 100%;
+}
+
+/* ====================================================
+                        CONTACT
+==================================================== */
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+#sub {
+    position: relative;
+    bottom: 20px;
+}
+
+.wpcf7-submit {
+    background-color: #e4a700;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    box-shadow: 0 2px #000000;
+}
+
+.yellow {
+    color: #e4a700;
+    position: relative;
+    font-weight: 500;
+    bottom: 10px;
+}
+
+/* ====================================================
+                        ARCHIVE
+==================================================== */
+
+.title-articles {
+    font-family: Marcellus, serif;
+    text-align: center;
+}
+
+.sub-articles::before {
+    display: inline-block;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #2d2d2d;
+    position: relative;
+    right: 20px;
+    bottom: 3px;
+}
+
+.sub-articles::after {
+    display: inline-block;
+    content: '';
+    width: 50px;
+    height: 1px;
+    background: #2d2d2d;
+    position: relative;
+    left: 20px;
+    bottom: 3px;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background-color: #ececec;
+    padding: 3em 0;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+    margin: 2em auto;
+}
+
+/* Redimension des images */
+
+.attachment-post-thumbnail {
+    width: 26vw;
+    width: 450px;
+    height: auto;
+}
+
+.content-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.text {
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 170px;
+    color: #ffffff;
+    font-size: 20px;
+    z-index: 1;
+    transition-property: color;
+    transition-duration: 300ms;
+    transition-timing-function: linear;
+}
+
+.overlay-color {
+    background-color: rgba(197, 165, 102, .8);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    /* transition-property: all;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out; */
+    transition: all 0.5s linear;
+}
+
+.content-image:hover .overlay-color {
+    display: block;
+    transition: all 0.5s linear;
+}
+
+.content-image:hover .text {
+    display: block;
+}
+
+.content-display {
+    padding: 1em;
+    background-color: #ffffff;
+}
+
+.content-title a {
+    font-size: 20px;
+    color: #2d2d2d;
+    font-family: Marcellus, serif;
+    text-decoration: none;
+}
+
+.content-title a:hover {
+    color: #c5a566;
+    transition-property: color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.content-date {
+    font-size: 13px;
+}
+
+.content-text {
+    font-size: 14px;
+    line-height: 18px;
+    font-family: Marcellus, serif;
+}
+
+.content-button-background {
+    background: #535353;
+}
+
+.content-button, .button-articles {
+    width: auto;
+    height: auto;
+    padding: 15px 20px;
+    font-family: Marcellus, serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+    z-index: 1;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+.button-articles {
+    max-width: 175px;
+    margin: 0 auto;
+    background: #ffffff;
+    text-align: center;
+}
+
+.content-button a, .button-articles a {
+    color: #c5a566;
+    text-decoration: none;
+}
+
+/* .content-button-background:after {
+    content: '';
+    display: inline-block;
+    background: rgba(255,255,255,.05);
+    border-radius: 100%;
+    width: 66px;
+    height: 66px;
+    z-index: 0;
+    position: absolute;
+    top: 20px;
+    right: 800px;
+} */
+
+.content-button:hover {
+    opacity: 0.8;
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+/* .button-articles {
+    max-width: 150px;
+    width: auto;
+    display: inline-block;
+    height: 46px;
+    line-height: 46px;
+    padding: 0 20px;
+    font-family: Marcellus,serif;
+    font-weight: 600;
+    text-transform: uppercase; 
+    Donne le point de référence pour le pseudo élément
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1); 
+}  */
+
+/* .button-articles {
+    display: flex;
+    justify-content: center;
+   
+    width: 150px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 3px;
+} */
+
+/* .button-articles:after {
+    display: inline-block;
+    content: '';
+    width: 66px;
+    height: 66px;
+    z-index: -1;
+    position: absolute;
+    background: rgba(45,45,45,.1);
+    top: -10px;
+    left: 50%;
+    border-radius: 100%;
+ 
+}
+
+.button-articles:hover:after {
+    border-radius: 100%;
+    transition: All .3s linear;
+    transform: translateX(-50%);
+} */
+
+/* ====================================================
+                        SINGLE
+==================================================== */
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.post__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 450px;
+    height: auto;
+}
+
+.site__navigation{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* ====================================================
+                        INDEX
+==================================================== */
+
+.factice {
+    text-align: center;
+    font-size: 35px;
+}

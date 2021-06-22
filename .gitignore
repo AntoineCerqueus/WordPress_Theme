@@ -1,0 +1,6 @@
+#Contenus non versionnés
+/wp-content/uploads/
+/wp-content/plugins/
+
+#Configuration
+/wp-config.php
