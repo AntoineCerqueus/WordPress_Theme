@@ -18,7 +18,7 @@ get_header(); ?>
 
     <div class="container">
         <div class="bloc">
-            <img class="image" src="<?php the_field('rubrique_1_-_image'); ?>" alt="" />
+            <img class="image" src="<?php the_field('rubrique_1_-_image'); ?>" alt="Dégustation" />
             <div class="name">
                 <strong><?php the_field('rubrique_1_-_nom'); ?></strong>
             </div>
@@ -34,7 +34,7 @@ get_header(); ?>
         </div>
 
         <div class="bloc">
-            <img class="image" src="<?php the_field('rubrique_2_-_image'); ?>" alt="" />
+            <img class="image" src="<?php the_field('rubrique_2_-_image'); ?>" alt="Discussions" />
             <div class="name">
                 <strong><?php the_field('rubrique_2_-_nom'); ?></strong>
             </div>
@@ -50,7 +50,7 @@ get_header(); ?>
         </div>
 
         <div class="bloc">
-            <img class="image" src="<?php the_field('rubrique_3_-_image'); ?>" alt="" />
+            <img class="image" src="<?php the_field('rubrique_3_-_image'); ?>" alt="Initiation" />
             <div class="name">
                 <strong><?php the_field('rubrique_3_-_nom'); ?></strong>
             </div>

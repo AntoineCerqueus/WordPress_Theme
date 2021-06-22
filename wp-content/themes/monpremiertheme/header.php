@@ -17,7 +17,7 @@
     <?php wp_body_open(); ?>
     <div class="header-top">
         <p class="header-top-left">
-            Site réalisé dans le cadre de la formation <strong><a href="https://simplon.co/anti-faq">Simplon</a></strong> sur la création d'un thème wordpress
+            Site réalisé dans le cadre de la formation <strong><a href="https://simplon.co/anti-faq" target="_blank" title="Présentation Simplon">Simplon</a></strong> sur la création d'un thème wordpress
         </p>
         <p class="header-top-right">
             <a class="header-top-button" href="https://simplon.co/session/developpeur-se-web-et-web-mobile-11/134">Promo Dev Web</a>
